@@ -64,3 +64,29 @@ print(int_array)
 
 # identity array => create a matrix with same number of columns & rows
 identity_array = np.identity(4) # np.identity(row/column)
+
+"""
+Copying Numpy arrays :
+if you copy numpy array like this 
+a = b 
+then it will store both a and b in the same memory  
+"""
+# Copying Numpy Array 
+a = np.array([1,2,3,4])
+b = a.copy() # Now both a and b have same value but are stored in different memory
+print(b)   
+
+# Basics Maths & Statistics
+x = np.array([2,4,6,8])
+y = np.array([1,3,5,7])
+add = x+y 
+print(f"x + y {add}")
+
+# gives minimum value of the array
+print(f"np.nim(x) = {np.min(x)}")
+
+# gives maximum value of the array
+print(f"np.max(x) = {np.max(x)}")
+
+# Gives the sum of all values of the array
+print(f"np.sum(y) = {np.sum(y)}")
