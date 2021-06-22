@@ -24,3 +24,22 @@ print(f"vector.itemsize = {vector.itemsize} ") # 2 bytes
 # gives the total amount of bytes taken by array
 print(f"vector.nbytes = {vector.nbytes} ") # 6 bytes
 
+# Changing and Accessing elements
+
+array = np.array([[1,2,3,4,5],[6,7,8,9,10]])
+print(array)
+
+# Accessing & changing a specific element
+print(f"array[1,1] = {array[1,-1]} ") # 7
+array[1,1] = 77
+
+# Getting a specific row 
+print(f"array[0, :] = {array[0, :]}") # [1 2 3 4 5]
+array[0, :] = [11,22,33, 44, 55]
+
+# Getting a secific column
+print(f"array[:, 2] = {array[:, 2]}") # [3, 8]
+array[:, 2] = [3, 88]
+
+# Accessing a secific part
+print(f"array[0, 1:-1:2] = {array[0, 1:-1:2]}") # [2 4]
