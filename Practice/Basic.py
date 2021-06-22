@@ -90,3 +90,16 @@ print(f"np.max(x) = {np.max(x)}")
 
 # Gives the sum of all values of the array
 print(f"np.sum(y) = {np.sum(y)}")
+
+# Reshaping Arrays
+array = np.array([-1,-2,-3,-4,-5,-6])
+x = array.reshape((2,3)) # Reshapes array into (2,3) shape
+
+# Advanced Indxing
+array = np.array([10, 20, 30 ,40])
+# Creates a array of all the value greater than 20 
+x = array[array > 20]
+print(f"array[array > 20] = {x}") 
+
+y = array[[0,2,-1]] # Creates a array of values at index 0, 2, -1
+print(f"array[[0,2,-1]] = {y}")
