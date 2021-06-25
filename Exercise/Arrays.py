@@ -28,4 +28,17 @@ array = np.array([10, 20, 30])
 array.dtype = 'float64'
 print(array.dtype)
 
+# Write a NumPy program to create a 2d array with 1 on the border and 0 inside.
+array = np.ones((5,5))
+z = np.zeros((3,3))
+array[1:-1, 1:-1] = z
+print(array)
+
+# Write a NumPy program to create a 8x8 matrix and fill it with a checkerboard pattern.
+array = np.zeros((8,8))
+array[1::2, ::2] = 1
+array[::2,1::2] = 1
+print(array)
+
 # 
+
